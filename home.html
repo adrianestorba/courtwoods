@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+  <nav class="bg-white shadow md:flex md:items-center md:justify-between p-3.5">
+    <div>
+    <span class="bg-lime-900 rounded-2xl text-3xl text-white font-[Poppins] font-bold">
+    COURTWOODS
+    </span>
+    </div>
+    <ul class="md:flex md:items-center">
+    <li class="mx-4"><a href="#about" class="text-x1 hover:text-emerald-500 duration-500 font-semibold">ABOUT</a></li>
+    <li class="mx-4"><a href="#book" class="text-x1 hover:text-emerald-500 duration-500 font-semibold">BOOKING</a></li>
+    <li class="mx-4"><a href="#news" class="text-x1 hover:text-emerald-500 duration-500 font-semibold">NEWS</a></li>
+    <li class="mx-4"><a href="#announcement" class="text-x1 hover:text-emerald-500 duration-500 font-semibold">ANNOUNCEMENT</a></li>
+    <li class="mx-4">
+    <button onclick="goToLogin()" class="bg-emerald-400 text-white duration-500 px-6 py-2 hover:bg-emerald-500 rounded font-semibold">
+      Login
+    </button>
+  </li>
+    </ul>
+  </nav>
+  <script>
+function goToLogin() {
+    window.location.href = "login.html";
+}
+</script>
+</html>

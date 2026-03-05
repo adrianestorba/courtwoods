@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+   <div class="min-h-screen flex items-center justify-center bg-gray-100">
+
+  <div class="bg-white p-10 rounded-xl shadow-lg w-full max-w-4xl">
+    <!-- Image / Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="your-image.png" 
+           alt="Logo"
+           class="w-24 h-24 object-contain">
+    </div>
+    <!-- Row 1 -->
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <label class="block mb-2 font-medium">Full Name</label>
+        <input type="text" placeholder="Enter your full legal name"
+          class="border border-gray-300 p-3 w-full rounded 
+                 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium">Player Name</label>
+        <input type="text" placeholder="Name displayed in games"
+          class="border border-gray-300 p-3 w-full rounded 
+                 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <label class="block mb-2 font-medium">Email Address</label>
+        <input type="email" placeholder="Enter your email"
+          class="border border-gray-300 p-3 w-full rounded 
+                 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium">Mobile Number (Optional)</label>
+        <input type="text" placeholder="Enter your mobile number"
+          class="border border-gray-300 p-3 w-full rounded 
+                 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+      </div>
+    </div>
+
+    <!-- Skill Level -->
+    <div class="mb-6">
+      <label class="block mb-2 font-medium">Skill Level</label>
+      <select
+        class="border border-gray-300 p-3 w-full rounded 
+               focus:outline-none focus:ring-2 focus:ring-emerald-600">
+        <option>Select your skill level</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+        <option>Professional</option>
+      </select>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <label class="block mb-2 font-medium">Password</label>
+        <input type="password" placeholder="Enter password (min 6 char)"
+          class="border border-gray-300 p-3 w-full rounded 
+                 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium">Confirm Password</label>
+        <input type="password" placeholder="Confirm your password"
+          class="border border-gray-300 p-3 w-full rounded 
+                 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+      </div>
+    </div>
+
+    <!-- Button -->
+    <button
+      class="bg-emerald-700 hover:bg-emerald-800 transition text-white w-full py-3 rounded-lg font-semibold">
+      Register
+    </button>
+
+  </div>
+</div>
+</body>
+</html>

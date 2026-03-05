@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+     <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+
+  <!-- Login Form -->
+  <div id="loginForm"
+       class="bg-white p-12  rounded-xl shadow-lg min-w-3xl">
+
+    <h2 class="text-2xl font-bold text-center mb-6">
+    </h2>
+     <div>
+        <p class="font-medium">Email Address</p>
+           <input type="email" placeholder="Enter your email"
+           class="border border-gray-300 p-3 w-full rounded mb-4 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+      </div>
+    <div class="mb-2">
+  <div class="flex justify-between items-center">
+    <p class="font-medium ">Password</p>
+    <a href="#" class="text-sm text-emerald-700 hover:underline">
+      Forgot password?
+    </a>
+  </div>
+
+  <input type="password" placeholder="Password"
+    class="border border-gray-300 p-3 w-full rounded mb-6 
+           focus:outline-none focus:ring-2 focus:ring-emerald-600">
+</div>
+    <button
+      class="bg-emerald-700 hover:bg-emerald-800 transition text-white w-full py-3 rounded-lg font-semibold">
+      Login
+    </button>
+    <div class="flex justify-baseline items-center mt-4 md:justify-center">
+  <p class="text-sm text-gray-600">
+    Don't have an account?
+  </p>
+  <a href="#" onclick="goToRegister()" class="text-sm text-emerald-700 hover:underline font-medium">
+    Register here
+  </a>
+</div>
+  </div>
+</div>
+<script>
+function showNextForm() {
+  document.getElementById("loginForm").classList.add("hidden");
+}
+function goToRegister() {
+  window.location.href = "register.html";
+}
+</script>
+</body>
+</html>
